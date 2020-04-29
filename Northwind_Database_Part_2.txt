@@ -1,0 +1,100 @@
+Queries on the Northwind Database - Part 2
+
+1) 
+
+Hint:
+Did you select the OrderID and UnitPrice columns?
+Did you alias UnitPrice as Price?
+Did you select the columns from the OrderDetails table?
+
+2) 
+
+Error: The answer renders as Correct when the columns are not aliased
+
+Hint:
+Did you select the CategoryName and Description columns?
+Did you alias Description as "Category Description"?
+Did you remember to put double quotations around "Category Description"?
+Did you select the columns from the Categories table?
+
+3) 
+
+Error: The answer renders as Correct when the columns are not aliased
+
+Hint:
+Did you select the ProductID, ProductName, UnitsInStock and UnitsOnOrder columns?
+Did you alias UnitsInStock as AmountInStock and UnitsOnOrder as  "Amount On Order"?
+Did you remember to put double quotation marks around "Amount On Order"?
+Did you select the columns from the Products table?
+
+
+4) 
+
+Error: The question and correct answer are not compatible
+Recommendation: Reword question to 
+-> What is the highest price for ab item in the Products table?
+
+Hint:
+Did you select the MAX(UnitPrice)?
+Did you select the MAX(UnitPrice) from the Products table?
+
+5) 
+
+Hint:  
+Did you select COUNT(*)?
+Did you select COUNT(*) from the Orders table?
+
+6) 
+
+Hint:  
+Did you select COUNT(*)?
+Did you select COUNT(*) from the Employees table?
+Did you use the WHERE clause?
+Did you remember to put quotation marks around 'Sales Representative'
+
+7) 
+
+
+Error: The question and correct answer are not compatible
+Recommendation: Reword question to 
+-> COUNT the number of employees with the Title of Sales Representative in 'London'. 
+	Rename the output column as "Number of London Sales Reps"
+
+Error: Registers correct answer with any query that produces 3 as a result
+EX: WHEN  Country = 'USA';
+
+Error: The answer renders as Correct when the columns are not aliased
+
+Hint:  
+Did you select COUNT(*)?
+Did you select COUNT(*) from the Employees table?
+Did you use the WHERE clause?
+Did you use the AND clause?
+Did you remember to put double quotation marks around "Number of London Sales Reps"?
+Did you remember to put quotation marks around 'Sales Representative'
+
+8)
+
+Error: The answer renders as Correct when the columns are not aliased
+
+Did you select  OrderID, ProductID and the UnitPrice * Quantity?
+Did you query from the OrderDetails table?
+Did you use the * to multiply UnitPrice and Quantity ?
+Did you remember to put double quotation marks around "Total Amount"?
+
+9)
+
+Error: The answer renders as Correct when the columns are not aliased
+
+Hint:
+
+Did you select  ProductID, ProductID and (UnitsInStock + UnitsOnOrder)?
+Did you query from the Products table?
+Did you use the + to add UnitsInStock and UnitsOnOrder ?
+
+
+
+
+
+
+

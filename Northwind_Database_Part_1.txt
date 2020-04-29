@@ -1,0 +1,85 @@
+Queries on the Northwind Database - Part 1
+
+1) 
+
+No alterations recommended
+
+2) 
+
+Hint:
+
+Can add solution
+
+SELECT *
+FROM Customers
+LIMIT 5;
+
+3) 
+
+No alterations recommended
+
+4) 
+
+Hint:
+
+Can add solution
+
+SELECT 
+    companyname,
+    phone
+FROM Shippers;
+
+5) 
+
+No alterations recommended
+
+6) 
+
+Hint: 
+
+Did you select the columns from the Employees table?
+
+7) 
+
+Recommend removing quotation marks in question wording to make sure students
+remember to add those in proper places on their own
+
+Hint: 
+
+Did you select the columns from the Employees table?
+
+Did you remember to put quotaion marks around 'Sales Representative' and 'London'
+
+8)
+
+Recommend removing stray backtick (`) near the end of the question
+
+Hint: 
+
+Did you select the columns from the Orders table?
+
+9)
+
+Hint:
+
+Did you select the columns from the Orders table?
+
+10)
+
+Hint:
+
+
+Did you select the City, Country and Phone columns?
+Did you select the columns from the Customers table?
+
+11)
+
+Hint:
+
+
+Did you select the City, Country and Phone columns?
+Did you select the columns from the Customers table?
+Did you ORDER BY CustomerID?
+
+
+
