@@ -1,4 +1,4 @@
-Queries on the Northwind Database - Part 2
+Queries on the Northwind Database - Part3
 
 1) 
 

@@ -1,0 +1,21 @@
+Queries on the Northwind Database - Part3
+
+1) 
+
+Recommendation: Specify that the query shoul dprovide a list of Category Names and the
+COUNT of the total products in each category. 
+
+Hint:
+Did you select the Categories.CategoryName and COUNT (*)  columns?
+Did you select the columns from the Categories and Products tables?
+Did you JOIN the tables ON Categories.CategoryID and Products.CategoryID?
+Did you group the query by Categories.CategoryName?
+Did you order the query by COUNT (*)?
+Did you order the query in DESC order?
+
+
+
+
+
+
+
