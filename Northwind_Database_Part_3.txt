@@ -2,7 +2,19 @@ Queries on the Northwind Database - Part3
 
 1) 
 
-Recommendation: Specify that the query shoul dprovide a list of Category Names and the
+Error: The explanation in the lesson doesn't work until aliases are removed
+Recommendation: Replace with un aliased explanation
+->
+
+SELECT categories.CategoryName, COUNT(*) AS TotalProducts
+FROM products 
+LEFT JOIN categories
+ON
+    products.CategoryID = categories.CategoryID
+GROUP BY categories.CategoryName
+ORDER BY COUNT(*) DESC;
+
+Recommendation: Specify that the query should dprovide a list of Category Names and the
 COUNT of the total products in each category. 
 
 Hint:
@@ -12,6 +24,117 @@ Did you JOIN the tables ON Categories.CategoryID and Products.CategoryID?
 Did you group the query by Categories.CategoryName?
 Did you order the query by COUNT (*)?
 Did you order the query in DESC order?
+
+2)
+
+Recommendation: Rewrite question to clarify
+-> Write a query to list country, city and number of customers per city. 
+Order the list from cities with lowest to highest number of customers
+
+Hint:
+Did you select the Country, City and COUNT (*) columns?
+Did you select the columns from the Customers table?
+Did you group the query by Country and City?
+Did you order the query by COUNT (*)?
+Did you order the query in DESC order?
+
+3) 
+
+Question: Do we need the "table.column" nomenclature when selecting from a single table?
+
+Hint:
+Did you select the ProductID, ProductName, UnitsInStock and ReorderLevel columns?
+Did you select the columns from the Products table?
+Did you narrow your query to instances WHERE UnitsInStock < ReorderLevel? 
+Did you order the query by ProductID?
+
+4)
+
+Hint:
+Did you select the ProductID, ProductName, and UnitsInStock  columns?
+Did you select a column representing the Amount Below Reorder as (ReorderLevel - UnitsInStock)?
+Did you select the columns from the Products table?
+Did you narrow your query to instances WHERE UnitsInStock < ReorderLevel? 
+Did you order the query by the Amount Below Reorder Level column in DESC order?
+
+5)
+
+Hint:
+Did you select the ProductID, ProductName, UnitsInStock and ReorderLevel columns?
+Did you select the columns from the Products table?
+Did you narrow your query to instances WHERE (p.UnitsInStock + p.UnitsOnOrder) <= p.ReorderLevel?
+Did you narrow your query to instances WHERE p.Discontinued = 0?  
+Did you order the query by ProductID?
+
+6)
+
+Comment: This question seems more basic than the others in this block
+
+Hint:
+Did you select the CustomerID, CompanyName and Region columns?
+Did you select the columns from the Customers table?  
+Did you order the query by Region and then CustomerID?
+
+7) 
+
+
+Hint:
+Did you select the ShipCountry and AVG(Freight) columns?
+Did you cast AVG(Freight) as a decimal?
+Did you remember the proper format -> DECIMAL(total digits allowed, digits after decimal point)?
+Did you make sure that (total digits allowed - digits after decimal point) is at least 5?
+Did you select the columns from the Orders table?
+Did you order the query by AVG(Freight)?
+Did you order the query in DESC order?
+Did you limit the query to 3 results?
+
+8) 
+
+Comment: there appears to be no reason to cast as dates in the WHERE clause
+Comment: works well with BETWEEN operator
+
+Hint:
+Did you select the ShipCountry and AVG(Freight) columns?
+Did you cast AVG(Freight) as a decimal?
+Did you remember the proper format -> DECIMAL(total digits allowed, digits after decimal point)?
+Did you make sure that (total digits allowed - digits after decimal point) is at least 5?
+Did you select the columns from the Orders table?
+Did you group the query by ShipCountry?
+Did you order the query by AVG(Freight)?
+Did you order the query in DESC order?
+Did you limit the query to 3 results?
+
+9) 
+
+Error: The explanation in the lesson doesn't iclude Title
+Recommendation: Add e.title to query as below
+-> SELECT e.EmployeeID, e.Title,  e.LastName, o.OrderID, p.ProductName, d.Quantity
+
+Hint:
+Did you select the Employees.EmployeeID, Employees.Title, Employees.LastName, Orders.OrderID, Products.ProductName and OrderDetails.Quantity columns?
+Did you select the columns from the Orders joined with the OrderDetails table using OrderID?
+Did you select the columns from the OrederDetails joined with the Products table using ProductID?
+Did you select the columns from the Products joined with the Employees table using EmployeeID?
+Did you order the query by Orders.OrderID and then Products.ProductID?
+
+10)
+
+Hint:
+Did you select the CustomerID, CompanyName, ContactName and Phone columns?
+Did you select the columns from the Customers table joined with the Orders table using CustomerID?
+Did you narrow your query to instances o.CustomerID is NULL?
+
+11)
+
+Did you use a subquery?
+Did your subquery select CustomerId from Orders where EmployeeID was 5?
+DDid you select the CustomerID column?
+Did you select the column from the Customers table?
+Did you narrow your query to instances WHERE CustomerID was not in the subquery?
+
+
+
+
 
 
 
