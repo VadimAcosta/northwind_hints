@@ -14,11 +14,11 @@ ON
 GROUP BY categories.CategoryName
 ORDER BY COUNT(*) DESC;
 
-Recommendation: Specify that the query should dprovide a list of Category Names and the
+Recommendation: Specify that the query should provide a list of Category Names and the
 COUNT of the total products in each category. 
 
 Hint:
-Did you select the Categories.CategoryName and COUNT (*)  columns?
+Did you select the Categories.CategoryName and COUNT (*) columns?
 Did you select the columns from the Categories and Products tables?
 Did you JOIN the tables ON Categories.CategoryID and Products.CategoryID?
 Did you group the query by Categories.CategoryName?
@@ -51,7 +51,7 @@ Did you order the query by ProductID?
 4)
 
 Hint:
-Did you select the ProductID, ProductName, and UnitsInStock  columns?
+Did you select the ProductID, ProductName, and UnitsInStock columns?
 Did you select a column representing the Amount Below Reorder as (ReorderLevel - UnitsInStock)?
 Did you select the columns from the Products table?
 Did you narrow your query to instances WHERE UnitsInStock < ReorderLevel? 
@@ -62,8 +62,8 @@ Did you order the query by the Amount Below Reorder Level column in DESC order?
 Hint:
 Did you select the ProductID, ProductName, UnitsInStock and ReorderLevel columns?
 Did you select the columns from the Products table?
-Did you narrow your query to instances WHERE (p.UnitsInStock + p.UnitsOnOrder) <= p.ReorderLevel?
-Did you narrow your query to instances WHERE p.Discontinued = 0?  
+Did you narrow your query to instances WHERE (UnitsInStock + UnitsOnOrder) <= ReorderLevel?
+Did you narrow your query to instances WHERE Discontinued = 0?  
 Did you order the query by ProductID?
 
 6)
@@ -112,9 +112,9 @@ Recommendation: Add e.title to query as below
 
 Hint:
 Did you select the Employees.EmployeeID, Employees.Title, Employees.LastName, Orders.OrderID, Products.ProductName and OrderDetails.Quantity columns?
-Did you select the columns from the Orders joined with the OrderDetails table using OrderID?
-Did you select the columns from the OrederDetails joined with the Products table using ProductID?
-Did you select the columns from the Products joined with the Employees table using EmployeeID?
+Did you select the columns from the Orders table joined with the OrderDetails table using OrderID?
+Did you select the columns from the OrederDetails table joined with the Products table using ProductID?
+Did you select the columns from the Products table joined with the Employees table using EmployeeID?
 Did you order the query by Orders.OrderID and then Products.ProductID?
 
 10)
@@ -122,13 +122,13 @@ Did you order the query by Orders.OrderID and then Products.ProductID?
 Hint:
 Did you select the CustomerID, CompanyName, ContactName and Phone columns?
 Did you select the columns from the Customers table joined with the Orders table using CustomerID?
-Did you narrow your query to instances o.CustomerID is NULL?
+Did you narrow your query to instances CustomerID is NULL?
 
 11)
 
 Did you use a subquery?
 Did your subquery select CustomerId from Orders where EmployeeID was 5?
-DDid you select the CustomerID column?
+Did you select the CustomerID column?
 Did you select the column from the Customers table?
 Did you narrow your query to instances WHERE CustomerID was not in the subquery?
 

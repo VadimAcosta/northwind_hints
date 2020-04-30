@@ -1,0 +1,44 @@
+Queries on the Northwind Database - Part4
+
+1) 
+Comment: 
+
+"High value customer" defined as a customer that spent at least $1000
+Totalwithoutdiscount and Totalwithdiscount must be rounded down to two decimal places
+
+Hint:
+
+Did you select the Customers.CustomerID, Customers.CompanyName columms?
+Did you select sum(OrderDetails.UnitPrice * OrderDetails.Quantity) as TotalWithoutDisc?
+Did you select sum((OrderDetails.UnitPrice - OrderDetails.UnitPrice * OrderDetails.Discount) * d.Quantity) as TotalWithDisc?
+Did you cast TotalWithoutDisc and TotalWithDisc as decimals with two numbers after the decimal point?
+
+Did you select the columns from the Orders table joined with the OrderDetails table using OrderID?
+Did you select the columns from the OrderDetails table joined with the Customers table using CustomerID?
+
+Did you narrow your query to instances WHERE Orders.OrderDate between '2016-01-01' and  '2017-01-01'?  
+Did you narrow your query to customers having sum((OrderDetails.UnitPrice - OrderDetails.UnitPrice * OrderDetails.Discount) * OrderDetails.Quantity) >= 1000
+Did you order the query by TotalWithDisc?
+Did you order the query in DESC order?
+
+2)
+
+Hint:
+Did you select the OrderID, OrderDate, RequiredDate, and ShippedDate columns?
+Did you select the columns from the Orders table?
+Did you narrow your query to instances WHERE date(RequiredDate) <= date(ShippedDate)?  
+Did you order the query by OrderID (*)?
+
+3)
+
+
+
+
+
+
+
+
+
+
+
+

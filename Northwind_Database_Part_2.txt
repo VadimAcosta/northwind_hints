@@ -77,9 +77,9 @@ Did you remember to put quotation marks around 'Sales Representative'
 
 Error: The answer renders as Correct when the columns are not aliased
 
-Did you select  OrderID, ProductID and the UnitPrice * Quantity?
+Did you select OrderID, ProductID and the UnitPrice * Quantity?
 Did you query from the OrderDetails table?
-Did you use the * to multiply UnitPrice and Quantity ?
+Did you use the * to multiply UnitPrice and Quantity?
 Did you remember to put double quotation marks around "Total Amount"?
 
 9)
@@ -88,7 +88,7 @@ Error: The answer renders as Correct when the columns are not aliased
 
 Hint:
 
-Did you select  ProductID, ProductID and (UnitsInStock + UnitsOnOrder)?
+Did you select ProductID, ProductID and (UnitsInStock + UnitsOnOrder)?
 Did you query from the Products table?
 Did you use the + to add UnitsInStock and UnitsOnOrder ?
 

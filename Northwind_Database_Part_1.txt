@@ -48,7 +48,7 @@ Hint:
 
 Did you select the columns from the Employees table?
 
-Did you remember to put quotaion marks around 'Sales Representative' and 'London'
+Did you remember to put quotation marks around 'Sales Representative' and 'London'
 
 8)
 
