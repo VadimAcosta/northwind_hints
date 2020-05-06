@@ -2,17 +2,12 @@ Queries on the Northwind Database - Part 1
 
 1) 
 
-No alterations recommended
+Hint:
+Did you select all columns from the "Shippers" table?
 
 2) 
 
-Hint:
-
-Can add solution
-
-SELECT *
-FROM Customers
-LIMIT 5;
+No alterations recommended
 
 3) 
 
